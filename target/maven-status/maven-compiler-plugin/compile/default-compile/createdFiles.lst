@@ -1,0 +1,13 @@
+pfc/ejb/facade/CampoFacade.class
+pfc/ejb/facade/ValorFacadeLocal.class
+pfc/jpa/modelo/Campo.class
+pfc/ejb/facade/AbstractFacade.class
+pfc/jpa/modelo/Campo_.class
+pfc/jpa/modelo/TipoCampo.class
+pfc/jsf/controlador/CampoBean.class
+pfc/jpa/modelo/Base.class
+pfc/jpa/modelo/Valor_.class
+pfc/ejb/facade/CampoFacadeLocal.class
+pfc/jpa/modelo/Base_.class
+pfc/jpa/modelo/Valor.class
+pfc/ejb/facade/ValorFacade.class
