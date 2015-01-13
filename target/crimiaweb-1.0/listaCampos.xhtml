@@ -2,18 +2,59 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:p="http://primefaces.org/ui">
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Listar Campos - TEST</title>
     </h:head>
     <h:body>
-        <h:form>
-            <p:dataTable var="campo" value="#{campoBean.campos}">
-                <p:column id="Des">
-                    <h:outputText value="#{campo.des}"/>
-                </p:column>
-            </p:dataTable>
-        </h:form>
+        
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="List"/></h1>
+                <p:dataTable value="#{campoBean.campos}" var="item">
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Des"/>
+                        </f:facet>
+                        <h:outputText value="#{item.des}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Tipo"/>
+                        </f:facet>
+                        <h:outputText value="#{item.tipo}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Multi"/>
+                        </f:facet>
+                        <h:outputText value="#{item.multi}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Lista"/>
+                        </f:facet>
+                        <h:outputText value="#{item.lista}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Usuopera"/>
+                        </f:facet>
+                        <h:outputText value="#{item.usuopera}"/>
+                    </p:column>
+                    <p:column>
+                        <f:facet name="header">
+                            <h:outputText value="Id"/>
+                        </f:facet>
+                        <h:outputText value="#{item.id}"/>
+                    </p:column>
+                </p:dataTable>
+            </h:form>
+        </f:view>
+
     </h:body>
 </html>
 
